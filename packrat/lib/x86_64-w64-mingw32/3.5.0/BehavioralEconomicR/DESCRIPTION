@@ -1,0 +1,26 @@
+Package: BehavioralEconomicR
+Type: Package
+Title: Trabaja con data de investigaciones de Behavioral Economics
+Version: 0.1.1
+Authors@R: c(
+    person(given="Arturo", family="Chian", email="arturob.chian@gmail.com", role = c("aut", "cre")
+    ),
+    person(given="Raul", family="Panduro",email="mesias.pch64@gmail.com", role = c("aut")
+    ),
+    person("Behavioral Economics & Data Science Team (BEST)",email="contactanos@besteamperu.org", role = c("cph", "fnd"))
+    )
+Description: Paquete de R disenado para trabajar de forma sencilla data de investigaciones de Economia Conductual.
+URL: https://github.com/BESTDATASCIENCE/BehavioralEconomicR
+BugReports: https://github.com/BESTDATASCIENCE/BehavioralEconomicR/issues
+License: MIT
+VignetteBuilder: knitr
+SystemRequirements: pandoc
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Author: Arturo Chian [aut, cre],
+  Raul Panduro [aut],
+  Behavioral Economics & Data Science Team (BEST) [cph, fnd]
+Maintainer: Arturo Chian <arturob.chian@gmail.com>
+Built: R 3.5.0; ; 2018-07-13 04:31:16 UTC; windows

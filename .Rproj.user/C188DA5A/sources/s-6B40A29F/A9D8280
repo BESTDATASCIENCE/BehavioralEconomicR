@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1531456104603.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2566905823",
+    "id" : "A9D8280",
+    "lastKnownWriteTime" : 1531456135,
+    "last_content_update" : 1531456135714,
+    "path" : "~/BehavioralEconomicR/R/zzz.R",
+    "project_path" : "R/zzz.R",
+    "properties" : {
+        "cursorPosition" : "39,0",
+        "scrollLine" : "25"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

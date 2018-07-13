@@ -1,0 +1,5 @@
+"0","be=xts(ie_data[,c(8,10)],order.by = ie_data$Date)
+"
+"2","Error in xts(ie_data[, c(8, 10)], order.by = ie_data$Date) : 
+  could not find function ""xts""
+"

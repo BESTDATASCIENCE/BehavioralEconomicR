@@ -1,0 +1,6 @@
+install.packages("roxygen2")
+library(roxygen2)
+setwd("~/BehavioralEconomicR")
+roxygenize()
+build_site()
+library(pkgdown)
