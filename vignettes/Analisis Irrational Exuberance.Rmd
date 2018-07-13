@@ -1,0 +1,61 @@
+---
+title: "Analisis data de Irrational Exuberance de Bob Shiller"
+author: "Arturo Chian"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Analisis data de Irrational Exuberance de Bob Shiller}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Utilizemos el poder de R y BEST para analizar la data de Shiller. Primero activemos los paquetes!
+
+```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+library(BehavioralEconomicR)
+library(xts)
+library(dygraphs)
+library(lubridate)
+```
+
+
+## A probar el paquete con el trabajo de Shiller!!
+
+El paquete cuenta con data del libro de Shiller Irrational Exuberance y lo puedes usar facilmente utilizando el siguiente script:
+
+
+```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+data("ie_data")
+be=xts::xts(ie_data[,c(8,10)],order.by = ie_data$Date)
+be2=xts::xts(ie_data[,c(7,11)],order.by = ie_data$Date)
+```
+
+### Hora de Graficar
+
+Veamos la relacion entre precio y ganancias:
+
+```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+dygraphs::dygraph(be, 
+        main = "Relacion historica entre Precio y ganancias") %>% 
+  dyRangeSelector()
+```
+
+Veamos la relacion entre CAPE y tasas de interes:
+
+
+```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+dygraphs::dygraph(be2, 
+        main = "Relacion historica entre tasas de interes y CAPE") %>% 
+  dyRangeSelector()
+```
+
+## Codigo de conducta
+
+Por favor considerar que este paquete cuenta con un [Codigo de Conducta del Contribuidor](CODE_OF_CONDUCT.md). Al participar en este proyecto o utilizarlo, se asume que estas de acuerdo con estos terminos.

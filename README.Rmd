@@ -53,7 +53,7 @@ library(lubridate)
 El paquete cuenta con data del libro de Shiller Irrational Exuberance y lo puedes usar facilmente utilizando el siguiente script:
 
 
-```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+```{r, eval = F,message=FALSE,warning=FALSE,results='asis'}
 data("ie_data")
 be=xts::xts(ie_data[,c(8,10)],order.by = ie_data$Date)
 be2=xts::xts(ie_data[,c(7,11)],order.by = ie_data$Date)
@@ -63,18 +63,24 @@ be2=xts::xts(ie_data[,c(7,11)],order.by = ie_data$Date)
 
 Veamos la relacion entre precio y ganancias:
 
-```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+```{r, eval = F,message=FALSE,warning=FALSE,results='asis'}
 dygraphs::dygraph(be, 
-        main = "Relacion historica entre Precio y ganancias")
+        main = "Relacion historica entre Precio y ganancias") %>% 
+  dyRangeSelector()
 ```
+
+<img src="man/figures/img1.png" align="center" />
 
 Veamos la relacion entre CAPE y tasas de interes:
 
 
-```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
+```{r, eval = F,message=FALSE,warning=FALSE,results='asis'}
 dygraphs::dygraph(be2, 
-        main = "Relacion historica entre tasas de interes y CAPE")
+        main = "Relacion historica entre tasas de interes y CAPE") %>% 
+  dyRangeSelector()
 ```
+
+<img src="man/figures/img2.png" align="center" />
 
 ## Codigo de conducta
 
