@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 Utilizemos el poder de R y BEST para analizar la data de Shiller. Primero activemos los paquetes!
 
 ```{r, eval = T,message=FALSE,warning=FALSE,results='asis'}
-library(BehavioralEconomicR)
+library(BehavioralEconomicsR)
 library(xts)
 library(dygraphs)
 library(lubridate)
