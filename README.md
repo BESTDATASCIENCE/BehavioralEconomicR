@@ -1,16 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# BehavioralEconomicR <img src="man/figures/logo.png" align="right" height="140" width="139"/>
+# BehavioralEconomicsR <img src="man/figures/logo.png" align="right" height="140" width="139"/>
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
-BehavioralEconomicR es un paquete disenado para trabajar facilmente con
+BehavioralEconomicsR es un paquete disenado para trabajar facilmente con
 data publica de investigaciones de Economia Conductual, de forma
 gratuita, libre y facil. Este proyecto es creado por [Behavioral
 Economics & Data Science Team (BEST)](http://besteamperu.org). Aprende a
 utilizarlo con nuestros ejemplos en
-<https://bestdatascience.github.io/BehavioralEconomicR/index.html>.
+<https://bestdatascience.github.io/BehavioralEconomicsR/index.html>.
 
 ## Instalacion
 
@@ -28,7 +28,7 @@ install.packages("zoo")
 install.packages("dygraphs")
 install.packages("devtools")
 install.packages("lubridate")
-devtools::install_github("BESTDATASCIENCE/BehavioralEconomicR")
+devtools::install_github("BESTDATASCIENCE/BehavioralEconomicsR")
 ```
 
 ## Activacion de paquetes
@@ -36,7 +36,7 @@ devtools::install_github("BESTDATASCIENCE/BehavioralEconomicR")
 Utilicemos la funcion `library()` para activar los paquetes instalados.
 
 ``` r
-library(BehavioralEconomicR)
+library(BehavioralEconomicsR)
 library(xts)
 library(dygraphs)
 library(lubridate)
