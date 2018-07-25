@@ -1,4 +1,4 @@
-Package: BehavioralEconomicR
+Package: BehavioralEconomicsR
 Type: Package
 Title: Trabaja con data de investigaciones de Behavioral Economics
 Version: 0.1.3
@@ -10,8 +10,8 @@ Authors@R: c(
     person("Behavioral Economics & Data Science Team (BEST)",email="contactanos@besteamperu.org", role = c("cph", "fnd"))
     )
 Description: Paquete de R disenado para trabajar de forma sencilla data de investigaciones de Economia Conductual.
-URL: https://github.com/BESTDATASCIENCE/BehavioralEconomicR
-BugReports: https://github.com/BESTDATASCIENCE/BehavioralEconomicR/issues
+URL: https://github.com/BESTDATASCIENCE/BehavioralEconomicsR
+BugReports: https://github.com/BESTDATASCIENCE/BehavioralEconomicsR/issues
 License: MIT
 VignetteBuilder: knitr
 SystemRequirements: pandoc

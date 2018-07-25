@@ -1,5 +1,5 @@
 ### File R/zzz.R
-### Part of the R package BehavioralEconomicR
+### Part of the R package BehavioralEconomicsR
 ### Copyright Behavioral Economics and Data Science Team (BEST)
 
 ### It is made available under the terms of the GNU General Public
@@ -25,7 +25,7 @@
 BESTWelcomeMessage <- function(){
 
  paste("\n",
-        "Bienvenidos al paquete BehavioralEconomicR version ", packageDescription("BehavioralEconomicR")$Version, "\n",
+        "Bienvenidos al paquete BehavioralEconomicsR version ", packageDescription("BehavioralEconomicsR")$Version, "\n",
         "\n",
         "Conozca mas de los cursos, proyectos y otros servicios de BEST\n",
         "en nuestra pagina web:\n",
@@ -34,6 +34,6 @@ BESTWelcomeMessage <- function(){
        "https://github.com/BESTDATASCIENCE\n",
         "\n",
         "Para suprimir este mensaje use:\n",
-        "suppressPackageStartupMessages(library(BehavioralEconomicR))\n",
+        "suppressPackageStartupMessages(library(BehavioralEconomicsR))\n",
           sep="")
 }
